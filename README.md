@@ -1,4 +1,4 @@
-# Trying-to-make-a-debug-flag.-It-ain-t-easy...
+# Trying to make a debug flag. But it ain't easy
 I've being practicing a lot with case statements since they're a very effective way when passing arguments/flags to a script or function, but I had some what of a problem when dealing with a persistent flag that I like to put in all my scripts, which is a `--debug` | `-D` flag, that basically execute `set -x` to the script, making bash go hiper-verbose, sure I could make a simple `case statement` + `for loop` to parse each flag, but the catch is that each flag is activated by the order written when executing the script.
 
 - Example: Executing `./script.sh --debug --option1 --option2` will give me basically almost every step of the script, including the operation of the other flags, BUT if script if executed with any different order like `./script --option1 --debug --option2` the debug information of the the flag `--option1` will not appear!
